@@ -1,0 +1,43 @@
+@import 'variables';
+
+.quiz{
+    background: var(--color-azul);
+    color:var(--color-blanco);
+    display: flex;
+    width: 40%;
+    height: auto;
+    margin: auto;
+    margin-top: 0.5em;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+
+    .izq{
+        width:40%;
+        margin: 1em auto;
+        .estado{
+            font-size: 20px;
+            margin: 0.3px 0px 0.5em 0px;
+        }
+    }
+    .der{
+        width:20%;
+        margin: auto;
+        .btn{
+            width: 10em;
+            height: 3em;
+            margin: .5em 0px;
+        }
+        .correct,
+        .btnCorrect:hover{
+            background:var(--color-correct);
+        }
+
+        .incorrect,
+        .incorrect:hover{
+            background:var(--color-incorrect);
+        }
+    }
+}
